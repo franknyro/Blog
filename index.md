@@ -24,3 +24,7 @@
 ## Accounts
 - [Twitter](https://twitter.com/FrankNyro)
 - [Mastodon (Ikatodon)](https://ika.queloud.net/web/accounts/19823)
+- [AtCoder](https://atcoder.jp/users/franknyro)
+  - [AtCoder Problems](https://kenkoooo.com/atcoder/#/user/franknyro)
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="About me |" data-url="https://franknyro.github.io/blog/">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
