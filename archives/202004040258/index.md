@@ -13,4 +13,4 @@ Apr 04, 2020, 02:58 [#Diary](https://franknyro.github.io/blog/tags/diary)
 
 ゆくゆくは競プロのテンプレートおきばをつくったりしたいです。
 
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text=" Markdown ファイルだけでブログをつくってみた |" data-url="https://franknyro.github.io/blog/archives/202004040258/">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Markdown ファイルだけでブログをつくってみた |" data-url="https://franknyro.github.io/blog/archives/202004040258/">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
