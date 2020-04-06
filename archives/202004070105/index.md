@@ -98,4 +98,7 @@ mkdir: cannot create directory '/home/franknyro/Documents/blog/tags/diary': File
 
 いま気づいたのですがコピペで `date` しまくっているせいで、分が変わるときに実行するとズレる可能性がありますね…。あとで修正します。自動でコミットするように追記してもいいかも。
 
+## 追記
+よくかんがえたらアーカイブが古い順になってしまうので修正しなくては…。
+
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="シェルスクリプトにブログの更新をさせた |" data-url="https://franknyro.github.io/blog/archives/202004070105/">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
