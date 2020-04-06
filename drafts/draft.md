@@ -4,7 +4,7 @@
 
 説明が面倒なので実際にみてください。
 
-いまのディレクトリ構成はこんなかんじ。各ディレクトリの下に `index.md` がおいてあります。
+いまのブログ用のディレクトリはこんなかんじ。各ディレクトリの下に `index.md` がおいてあります。
 
 ```
 |-- archives
@@ -19,8 +19,13 @@
 ```shell
 #!/bin/bash
 
-curdate="`date +'%Y%m%d%H%M'`"
-dirname="/home/franknyro/Documents/blog/archives/${curdate}"
+year="`date +%Y`"
+month="`date +%m`"
+month_eng="`date +%b`"
+day="`date +%d`"
+hour="`date +%H`"
+minute="`date +%M`"
+dirname="/home/franknyro/Documents/blog/archives/${year}${month}${day}${hour}${minute}"
 mkdir $dirname
 article="${dirname}/index.md"
 touch $article
@@ -34,42 +39,45 @@ tag=${tag_lower^}
 # 記事ファイルへの追加
 {
     # 記事ファイルにヘッダを追加
-    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |\n"
-    echo -e "# $title"
+    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |\n# ${title}\n"
     LC_TIME=en_US.UTF-8
-    echo -e "`date +%b` `date +%d`, `date +%Y`, `date +%H`:`date +%M` [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)\n"
+    echo -e "${month_eng} ${day}, ${year}, ${hour}:${minute} [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})\n"
     # 記事ファイルに下書きファイルの内容を追加
     cat $draft
-    echo -e "\n"
     # 記事ファイルに Tweet ボタンを追加
-    echo -e "<a href=\"https://twitter.com/share?ref_src=twsrc%5Etfw\" class=\"twitter-share-button\" data-text=\"$title |\" data-url=\"https://franknyro.github.io/blog/archives/$curdate/\">Tweet</a><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+    echo -e "\n\n<a href=\"https://twitter.com/share?ref_src=twsrc%5Etfw\" class=\"twitter-share-button\" data-text=\"${title} |\" data-url=\"https://franknyro.github.io/blog/archives/${year}${month}${day}${hour}${minute}/\">Tweet</a><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
 } >> $article
 
 # アーカイブページへ記事を追加
 archives="/home/franknyro/Documents/blog/archives/index.md"
+sed '1,3d' $archives > tmp.md
+rm $archives
+touch $archives
 {
-    echo -e "\n"
-    echo -e "## [$title](https://franknyro.github.io/blog/archives/$curdate/)"
-    echo -e "`date +%b` `date +%d`, `date +%Y`, `date +%H`:`date +%M` [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
+    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |\n# Archives"
+    echo -e "${month_eng} ${day}, ${year}, ${hour}:${minute} [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})\n"
+    cat tmp.md
 } >> $archives
+rm tmp.md
 
 # 個別のタグページへ記事を追加
-flg="`mkdir /home/franknyro/Documents/blog/tags/$tag_lower ; echo $?`"
-tag_article_list="/home/franknyro/Documents/blog/tags/$tag_lower/index.md"
+flg="`mkdir /home/franknyro/Documents/blog/tags/${tag_lower} ; echo $?`"
+tag_article_list="/home/franknyro/Documents/blog/tags/${tag_lower}/index.md"
+sed '1,3d' $tag_article_list > tmp.md
+rm $tag_article_list
+touch $tag_article_list
 {
-    echo -e "\n"
-    echo -e "## [$title](https://franknyro.github.io/blog/archives/$curdate/)"
-    echo -e "`date +%b` `date +%d`, `date +%Y`, `date +%H`:`date +%M` [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
+    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |\n# #${tag}"
+    echo -e "${month_eng} ${day}, ${year}, ${hour}:${minute} [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})\n"
+    cat tmp.md
 } >> $tag_article_list
+rm tmp.md
 
 # 新規タグの場合はタグ一覧ページにタグを追加
-echo $flg
 if [ $flg = 0 ]; then
-    echo hello
     tag_list="/home/franknyro/Documents/blog/tags/index.md"
     {
-        echo -e "\n"
-        echo -e "- [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
+        echo -e "\n- [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})"
     } >> $tag_list
 fi
 ```
@@ -81,8 +89,8 @@ fi
 
 シェルスクリプトをはじめて書いたので時間はかかったけど勉強になりました。
 
-ハマりポイントは地味ですが日付表示の月が英語になってくれなかったところです。`Apr` となってほしいところが `4月` となっていました。
+ハマりポイントは地味ですが日付表示の月が英語になってくれなかったところです。`APR` となってほしいところが `4月` となっていました。`LOCALE` して確認すると `LC_TIME=JA_JP.UTF-8` となっていたので、実行時に `LC_TIME=EN_US.UTF-8` に変更するようにしました。
 
-`locale` して確認すると `LC_TIME=ja_JP.UTF-8` となっていたので、実行時に `LC_TIME=en_US.UTF-8` に変更するようにしました。
+いま気づいたのですがコピペで `DATE` しまくっているせいで、分が変わるときに実行するとズレる可能性がありますね…。あとで修正します。自動でコミットするように追記してもいいかも。
 
-いま気づいたのですがコピペで `date` しまくっているせいで、分が変わるときに実行するとズレる可能性がありますね…。あとで修正します。自動でコミットするように追記してもいいかも。
+（一度投稿した記事ですが、アーカイブページなどに記事を追加するとき古い順になっていたので修正して再投稿しました）

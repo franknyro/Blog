@@ -1,3 +1,27 @@
+| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
+# シェルスクリプトでブログを更新する
+
+Apr 07, 2020, 03:36 [#Tech](https://franknyro.github.io/blog/tags/tech)
+
+このブログは GitHub Pages で公開しているリポジトリにマークダウンファイルを投げているだけなので、自動でアーカイブやタグ一覧を更新する機能がありません。
+
+さすがに手作業で毎回更新するのは面倒なので、ローカル環境でシェルスクリプトにやらせてみました。
+
+説明が面倒なので実際にみてください。
+
+いまのブログ用のディレクトリはこんなかんじ。各ディレクトリの下に `index.md` がおいてあります。
+
+```
+|-- archives
+|   `-- 202004040258
+|-- drafts
+`-- tags
+    `-- diary
+```
+
+コードはこんなかんじ。下書きファイルと共に `drafts` ディレクトリ直下においてあります。
+
+```shell
 #!/bin/bash
 
 year="`date +%Y`"
@@ -74,3 +98,22 @@ if [ $flg = 0 ]; then
         echo -e "\n- [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})"
     } >> $tag_list
 fi
+```
+
+この記事でためしに実行してみるとこんなかんじ。
+
+```
+$ ./release-article.sh 
+下書きファイル名を入力：draft.md
+記事タイトルを入力：シェルスクリプトでブログを更新する
+記事タグを入力（全て小文字）：tech
+```
+
+シェルスクリプトをはじめて書いたので時間はかかったけど勉強になりました。
+
+ハマりポイントは地味ですが日付表示の月が英語になってくれなかったところです。`APR` となってほしいところが `4月` となっていました。`LOCALE` して確認すると `LC_TIME=JA_JP.UTF-8` となっていたので、実行時に `LC_TIME=EN_US.UTF-8` に変更するようにしました。
+
+## 追記
+一度投稿した記事ですが、アーカイブページなどに記事を追加するとき古い順になっていたので修正して再投稿しました。けっこう骨の折れる修正でした…。
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="シェルスクリプトでブログを更新する |" data-url="https://franknyro.github.io/blog/archives/202004070336/">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
