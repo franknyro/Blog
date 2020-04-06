@@ -26,6 +26,7 @@ Apr 07, 2020, 04:17 [#Tech](https://franknyro.github.io/blog/tags/tech)
 ```shell
 #!/bin/bash
 
+LC_TIME=en_US.UTF-8
 year="`date +%Y`"
 month="`date +%m`"
 month_eng="`date +%b`"
@@ -49,7 +50,6 @@ tag=${tag_lower^}
     echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |"
     echo -e "\n"
     echo -e "# $title"
-    LC_TIME=en_US.UTF-8
     echo -e "$month_eng $day, $year, $hour:$minute [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
     echo -e "\n"
     # 記事ファイルに下書きファイルの内容を追加
