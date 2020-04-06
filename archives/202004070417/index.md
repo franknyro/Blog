@@ -110,14 +110,17 @@ fi
 この記事でためしに実行してみるとこんなかんじ。
 
 ```
+$ ./release-article.sh 
+下書きファイル名を入力：draft.md
+記事タイトルを入力：シェルスクリプトでブログを更新する
+記事タグを入力（全て小文字）：tech
 ```
 
 シェルスクリプトをはじめて書いたので時間はかかったけど勉強になりました。
 
 ハマりポイントは地味ですが日付表示の月が英語になってくれなかったところです。`APR` となってほしいところが `4月` となっていました。`LOCALE` して確認すると `LC_TIME=JA_JP.UTF-8` となっていたので、実行時に `LC_TIME=EN_US.UTF-8` に変更するようにしました。
 
-いま気づいたのですがコピペで `DATE` しまくっているせいで、分が変わるときに実行するとズレる可能性がありますね…。あとで修正します。自動でコミットするように追記してもいいかも。
-
-（一度投稿した記事ですが、アーカイブページなどに記事を追加するとき古い順になっていたので修正して再投稿しました）
+## 追記
+一度投稿した記事ですが、アーカイブページなどに記事を追加するとき古い順になっていたので修正して再投稿しました。
 
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="シェルスクリプトでブログを更新する |" data-url="https://franknyro.github.io/blog/archives/202004070417/">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
