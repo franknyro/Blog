@@ -20,13 +20,17 @@ tag=${tag_lower^}
 # 記事ファイルへの追加
 {
     # 記事ファイルにヘッダを追加
-    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |\n# ${title}\n"
+    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |"
+    echo -e "\n"
+    echo -e "# ${title}"
     LC_TIME=en_US.UTF-8
-    echo -e "${month_eng} ${day}, ${year}, ${hour}:${minute} [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})\n"
+    echo -e "${month_eng} ${day}, ${year}, ${hour}:${minute} [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})"
+    echo -e "\n"
     # 記事ファイルに下書きファイルの内容を追加
     cat $draft
+    echo -e "\n"
     # 記事ファイルに Tweet ボタンを追加
-    echo -e "\n\n<a href=\"https://twitter.com/share?ref_src=twsrc%5Etfw\" class=\"twitter-share-button\" data-text=\"${title} |\" data-url=\"https://franknyro.github.io/blog/archives/${year}${month}${day}${hour}${minute}/\">Tweet</a><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
+    echo -e "<a href=\"https://twitter.com/share?ref_src=twsrc%5Etfw\" class=\"twitter-share-button\" data-text=\"${title} |\" data-url=\"https://franknyro.github.io/blog/archives/${year}${month}${day}${hour}${minute}/\">Tweet</a><script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>"
 } >> $article
 
 # アーカイブページへ記事を追加
@@ -38,8 +42,9 @@ touch $archives
     echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |"
     echo -e "\n"
     echo -e "# Archives"
-    echo -e "## ${title}"
-    echo -e "${month_eng} ${day}, ${year}, ${hour}:${minute} [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})\n"
+    echo -e "## [${title}](https://franknyro.github.io/blog/archives/${year}${month}${day}${hour}${minute})"
+    echo -e "${month_eng} ${day}, ${year}, ${hour}:${minute} [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})"
+    echo -e "\n"
     cat tmp.md
 } >> $archives
 rm tmp.md
@@ -56,7 +61,7 @@ touch $tag_article_list
     echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |"
     echo -e "\n"
     echo -e "# #${tag}"
-    echo -e "## ${title}"
+    echo -e "## [${title}](https://franknyro.github.io/blog/archives/${year}${month}${day}${hour}${minute})"
     echo -e "${month_eng} ${day}, ${year}, ${hour}:${minute} [#${tag}](https://franknyro.github.io/blog/tags/${tag_lower})"
     if [ $flg = 1 ]; then
         echo -e "\n"
