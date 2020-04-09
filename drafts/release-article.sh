@@ -7,7 +7,7 @@ month_eng="`date +%b`"
 day="`date +%d`"
 hour="`date +%H`"
 minute="`date +%M`"
-dirname="/home/franknyro/Documents/blog/archives/$year$month$day$hour$minute"
+dirname="/$HOME/blog/archives/$year$month$day$hour$minute"
 mkdir $dirname
 article="$dirname/index.md"
 touch $article
@@ -34,7 +34,7 @@ tag=${tag_lower^}
 } >> $article
 
 # アーカイブページへ記事を追加
-archives="/home/franknyro/Documents/blog/archives/index.md"
+archives="/$HOME/blog/archives/index.md"
 sed '1,3d' $archives > tmp.md
 rm $archives
 touch $archives
@@ -50,7 +50,7 @@ touch $archives
 rm tmp.md
 
 # 個別のタグページへ記事を追加
-flg="`mkdir /home/franknyro/Documents/blog/tags/$tag_lower ; echo $?`"
+flg="`mkdir /$HOME/blog/tags/$tag_lower ; echo $?`"
 tag_article_list="/home/franknyro/Documents/blog/tags/$tag_lower/index.md"
 if [ $flg = 1 ]; then
     sed '1,3d' $tag_article_list > tmp.md
@@ -74,7 +74,7 @@ fi
 
 # 新規タグの場合はタグ一覧ページにタグを追加
 if [ $flg = 0 ]; then
-    tag_list="/home/franknyro/Documents/blog/tags/index.md"
+    tag_list="/$HOME/blog/tags/index.md"
     {
         echo -e "\n- [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
     } >> $tag_list
