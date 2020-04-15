@@ -10,7 +10,7 @@ Node.js のモジュール Discord.js をつかって、オンライン・コワ
 
 プログラムの設計をかんがえるのはむずかしいですね。
 
-[RepositoryGitHub](https://github.com/franknyro/octoling-girl-bot)
+[Repository](https://github.com/franknyro/octoling-girl-bot)
 
 ## 背景
 イカトドンというスプラトゥーン好きの集まる SNS（マストドン）があります。スプラトゥーンというタイトルの人気が下火になったいまでも、けっこうたくさんのアクティブユーザがいます。
