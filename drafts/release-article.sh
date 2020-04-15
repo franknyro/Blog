@@ -50,8 +50,8 @@ touch $archives
 rm tmp.md
 
 # 個別のタグページへ記事を追加
-flg="`mkdir /$HOME/blog/tags/$tag_lower ; echo $?`"
-tag_article_list="/home/franknyro/Documents/blog/tags/$tag_lower/index.md"
+flg="`mkdir $HOME/blog/tags/$tag_lower ; echo $?`"
+tag_article_list="/home/franknyro/blog/tags/$tag_lower/index.md"
 if [ $flg = 1 ]; then
     sed '1,3d' $tag_article_list > tmp.md
     rm $tag_article_list
