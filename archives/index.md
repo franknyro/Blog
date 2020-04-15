@@ -2,6 +2,11 @@
 
 
 # Archives
+## [Node.js で Discord bot をつくった](https://franknyro.github.io/blog/archives/202004152105)
+Apr 15, 2020, 21:05 [#Tech](https://franknyro.github.io/blog/tags/tech)
+
+
+# Archives
 ## [シェルスクリプトでブログを更新する](https://franknyro.github.io/blog/archives/202004070417)
 Apr 07, 2020, 04:17 [#Tech](https://franknyro.github.io/blog/tags/tech)
 

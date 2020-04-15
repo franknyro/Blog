@@ -1,3 +1,10 @@
+| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
+
+
+# Node.js で Discord bot をつくった
+Apr 15, 2020, 21:05 [#Tech](https://franknyro.github.io/blog/tags/tech)
+
+
 ## 概要
 Node.js のモジュール Discord.js をつかって、オンライン・コワーキングスペース用のチャットボットをつくりました。
 
@@ -81,3 +88,5 @@ Node.js のモジュール Discord.js をつかって、オンライン・コワ
 タコガールちゃんはイカトドンのそういった風土に触発されて作ったものです。
 
 イカトドンのみなさん、運営のみなさん、アドバイスをくださったみなさん、もくもく会のみなさんにお礼を申し上げます。これからもよろしくおねがいします。
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Node.js で Discord bot をつくった |" data-url="https://franknyro.github.io/blog/archives/202004152105/">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
