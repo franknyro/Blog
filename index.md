@@ -21,8 +21,11 @@
   - AtCoder をやっています。中級者になるべく精進中。
   - C/C++
 
+- 音楽
+
 ## Accounts
 - [Twitter](https://twitter.com/FrankNyro)
+- [GitHub](https://github.com/franknyro)
 - [Mastodon (Ikatodon)](https://ika.queloud.net/web/accounts/19823)
 - [AtCoder](https://atcoder.jp/users/franknyro)
   - [AtCoder Problems](https://kenkoooo.com/atcoder/#/user/franknyro)

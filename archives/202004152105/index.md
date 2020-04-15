@@ -1,9 +1,7 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
-
 # Node.js で Discord bot をつくった
 Apr 15, 2020, 21:05 [#Tech](https://franknyro.github.io/blog/tags/tech)
-
 
 ## 概要
 Node.js のモジュール Discord.js をつかって、オンライン・コワーキングスペース用のチャットボットをつくりました。
@@ -11,6 +9,8 @@ Node.js のモジュール Discord.js をつかって、オンライン・コワ
 はじめてアプリをつくりました。
 
 プログラムの設計をかんがえるのはむずかしいですね。
+
+[RepositoryGitHub](https://github.com/franknyro/octoling-girl-bot)
 
 ## 背景
 イカトドンというスプラトゥーン好きの集まる SNS（マストドン）があります。スプラトゥーンというタイトルの人気が下火になったいまでも、けっこうたくさんのアクティブユーザがいます。
