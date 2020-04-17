@@ -11,7 +11,7 @@ Apr 17, 2020, 19:54 [#Study](https://franknyro.github.io/blog/tags/study)
 
 全体像はこんな感じ。
 
-```javascript
+```js
 const fs = require("fs");
 const readline = require("readline");
 const { google } = require("googleapis");
@@ -127,7 +127,7 @@ function listMajors(auth) {
 
 ***
 
-```javascript
+```js
 const fs = require("fs");
 const readline = require("readline");
 const { google } = require("googleapis");
@@ -153,7 +153,7 @@ Package Manager Tips などにもあるとおり JSON やローカルファイ�
 
 `fs` モジュールでファイルをあつかうことができる。つかうときは
 
-```javascript
+```js
 const fs = require("fs");
 ```
 
@@ -168,9 +168,9 @@ const fs = require("fs");
 
 同期処理は `try...catch` で例外処理をおこなう。
 
-## [try...catch](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Statements/try...catch)
+## [try...catch](https://developer.mozilla.org/ja/docs/Web/javascript/Reference/Statements/try...catch)
 
-```JavaScript
+```js
 try {
     // 期待される処理
 }
@@ -203,7 +203,7 @@ finally {
 
 - コールバック関数は、関数の引数になる関数（コールされる関数）
 
-```JavaScript
+```js
 fs.rename('/tmp/hello', '/tmp/world', (err) => {
     if (err) throw err;
     fs.stat('/tmp/world', (err, stats) => {
@@ -221,7 +221,7 @@ fs.rename('/tmp/hello', '/tmp/world', (err) => {
 
 非同期処理で不都合が起きるなら同期処理すればいいじゃんとおもったけど、同期処理は全体のプロセスを完全に止めてしまうとのこと。なるほど。
 
-```JavaScript
+```js
 const { google } = require("googleapis");
 ```
 
@@ -233,7 +233,7 @@ const { google } = require("googleapis");
 
 ***
 
-```javascript
+```js
 fs.readFile("credentials.json", (err, content) => {
     if (err) return console.log("Error loading client secret file:", err);
     authorize(JSON.parse(content), listMajors);
@@ -258,7 +258,7 @@ fs.readFile("credentials.json", (err, content) => {
 
 オブジェクトを返す前に `reviver` を通して変換される。
 
-```javascript
+```js
 let str = '{"title":"Conference","date":"2017-11-30T12:00:00.000Z"}';
 let meetup = JSON.parse(str);
 alert(meetup.date.getDate()); // Error!
@@ -268,7 +268,7 @@ alert(meetup.date.getDate()); // Error!
 
 そこで `reviver` を通して変換する。
 
-```javascript
+```js
 let str = '{"title":"Conference","date":"2017-11-30T12:00:00.000Z"}';
 let meetup = JSON.parse(str, function(key, value) {
     if (key == 'date') return new Date(value);
@@ -285,7 +285,7 @@ Sheets API の場合は JSON 文字列は渡された先の関数でも JSON 文
 
 ***
 
-```javascript
+```js
 function authorize(credentials, callback) {
     const { client_secret, client_id, redirect_uris } = credentials.installed;
     const oAuth2Client = new google.auth.OAuth2(
@@ -304,7 +304,7 @@ function authorize(credentials, callback) {
 
 さっき
 
-```javascript
+```js
 authorize(JSON.parse(content), listMajors);
 ```
 
@@ -323,7 +323,7 @@ authorize(JSON.parse(content), listMajors);
 
 ***
 
-```javascript
+```js
 function getNewToken(oAuth2Client, callback) {
     const authUrl = oAuth2Client.generateAuthUrl({
         access_type: "offline",
