@@ -11,7 +11,7 @@ Apr 17, 2020, 19:54 [#Study](https://franknyro.github.io/blog/tags/study)
 
 全体像はこんな感じ。
 
-```JavaScript
+```javascript
 const fs = require("fs");
 const readline = require("readline");
 const { google } = require("googleapis");
@@ -127,7 +127,7 @@ function listMajors(auth) {
 
 ***
 
-```JavaScript
+```javascript
 const fs = require("fs");
 const readline = require("readline");
 const { google } = require("googleapis");
@@ -153,7 +153,7 @@ Package Manager Tips などにもあるとおり JSON やローカルファイ�
 
 `fs` モジュールでファイルをあつかうことができる。つかうときは
 
-```JavaScript
+```javascript
 const fs = require("fs");
 ```
 
@@ -233,7 +233,7 @@ const { google } = require("googleapis");
 
 ***
 
-```JavaScript
+```javascript
 fs.readFile("credentials.json", (err, content) => {
     if (err) return console.log("Error loading client secret file:", err);
     authorize(JSON.parse(content), listMajors);
@@ -258,7 +258,7 @@ fs.readFile("credentials.json", (err, content) => {
 
 オブジェクトを返す前に `reviver` を通して変換される。
 
-```JavaScript
+```javascript
 let str = '{"title":"Conference","date":"2017-11-30T12:00:00.000Z"}';
 let meetup = JSON.parse(str);
 alert(meetup.date.getDate()); // Error!
@@ -268,7 +268,7 @@ alert(meetup.date.getDate()); // Error!
 
 そこで `reviver` を通して変換する。
 
-```JavaScript
+```javascript
 let str = '{"title":"Conference","date":"2017-11-30T12:00:00.000Z"}';
 let meetup = JSON.parse(str, function(key, value) {
     if (key == 'date') return new Date(value);
@@ -285,7 +285,7 @@ Sheets API の場合は JSON 文字列は渡された先の関数でも JSON 文
 
 ***
 
-```JavaScript
+```javascript
 function authorize(credentials, callback) {
     const { client_secret, client_id, redirect_uris } = credentials.installed;
     const oAuth2Client = new google.auth.OAuth2(
@@ -304,7 +304,7 @@ function authorize(credentials, callback) {
 
 さっき
 
-```JavaScript
+```javascript
 authorize(JSON.parse(content), listMajors);
 ```
 
@@ -323,7 +323,7 @@ authorize(JSON.parse(content), listMajors);
 
 ***
 
-```JavaScript
+```javascript
 function getNewToken(oAuth2Client, callback) {
     const authUrl = oAuth2Client.generateAuthUrl({
         access_type: "offline",
