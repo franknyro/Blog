@@ -1,6 +1,9 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
 # Archives
+## [Google Sheets API のサンプルコードを読む](https://franknyro.github.io/blog/archives/202004171954)
+Apr 17, 2020, 19:54 [#Study](https://franknyro.github.io/blog/tags/study)
+
 ## [Node.js で Discord bot をつくった](https://franknyro.github.io/blog/archives/202004152105)
 Apr 15, 2020, 21:05 [#Tech](https://franknyro.github.io/blog/tags/tech)
 

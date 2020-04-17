@@ -71,6 +71,6 @@ fi
 if [ $flg = 0 ]; then
     tag_list="/$HOME/blog/tags/index.md"
     {
-        echo -e "\n- [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
+        echo -e "- [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
     } >> $tag_list
 fi

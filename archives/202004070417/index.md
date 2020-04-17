@@ -48,11 +48,9 @@ tag=${tag_lower^}
 # 記事ファイルへの追加
 {
     # 記事ファイルにヘッダを追加
-    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |"
-    echo -e "\n"
+    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |\n"
     echo -e "# $title"
-    echo -e "$month_eng $day, $year, $hour:$minute [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
-    echo -e "\n"
+    echo -e "$month_eng $day, $year, $hour:$minute [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)\n"
     # 記事ファイルに下書きファイルの内容を追加
     cat $draft
     echo -e "\n"
@@ -66,12 +64,10 @@ sed '1,3d' $archives > tmp.md
 rm $archives
 touch $archives
 {
-    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |"
-    echo -e "\n"
+    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |\n"
     echo -e "# Archives"
     echo -e "## [$title](https://franknyro.github.io/blog/archives/$year$month$day$hour$minute)"
-    echo -e "$month_eng $day, $year, $hour:$minute [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
-    echo -e "\n"
+    echo -e "$month_eng $day, $year, $hour:$minute [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)\n"
     cat tmp.md
 } >> $archives
 rm tmp.md
@@ -85,8 +81,7 @@ if [ $flg = 1 ]; then
 fi
 touch $tag_article_list
 {
-    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |"
-    echo -e "\n"
+    echo -e "| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |\n"
     echo -e "# #$tag"
     echo -e "## [$title](https://franknyro.github.io/blog/archives/$year$month$day$hour$minute)"
     echo -e "$month_eng $day, $year, $hour:$minute [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
@@ -103,7 +98,7 @@ fi
 if [ $flg = 0 ]; then
     tag_list="/$HOME/blog/tags/index.md"
     {
-        echo -e "\n- [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
+        echo -e "- [#$tag](https://franknyro.github.io/blog/tags/$tag_lower)"
     } >> $tag_list
 fi
 ```
