@@ -1,3 +1,8 @@
+| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
+
+# Diary 4/16-18
+Apr 18, 2020, 20:42 [#Diary](https://franknyro.github.io/blog/tags/diary)
+
 ## 4/16
 朝 5 時。きのうは 2 時にねて 16 時におきたのでまだおきている。なんとなくアウトプットをすばやくできるようになりたいなとおもって、考えていることをパッとかいてみることにした。ブログに公開するかどうかはわからない。脳内ツイートってかんじ。
 
@@ -74,3 +79,5 @@ Git 系のプラグインを追加した。
 Promise の本読めばなんとかなるきがした。
 
 寝て起きた。昼夜逆転なおらず。一週間ぐらい雰囲気で JS 書いてたけど、そろそろ体系的に知識を入れたほうが効率が良い気がするので、JavaScript Primer よんでいく。
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Diary 4/16-18 |" data-url="https://franknyro.github.io/blog/archives/202004182042/">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
