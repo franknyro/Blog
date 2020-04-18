@@ -24,7 +24,7 @@ Apr 18, 2020, 20:42 [#Diary](https://franknyro.github.io/blog/tags/diary)
 
 [まちカドまぞくのプロマイド一覧をシェル芸で作る](https://qiita.com/eggplants/items/7b2e761093bd8f330dd7)
 
-[【Linux】CLIでJavascriptを実行した結果のWEBページを取得する方法(phantomjs) | 瀬戸内の雲のように](https://www.setouchino.cloud/blogs/74)
+[【Linux】CLIでJavascriptを実行した結果のWEBページを取得する方法(phantomjs) \| 瀬戸内の雲のように](https://www.setouchino.cloud/blogs/74)
 
 これ今度やろう。Google でランドマークを検索すると混雑状況がでてくるけど、JavaScript 実行後のページじゃないと `curl` ではソース取得できない。
 
