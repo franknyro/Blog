@@ -1,6 +1,6 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
-# AtCoder Beginner Contest 163 D - Sum of Large Numbers
+# AtCoder ABC 163 D - Sum of Large Numbers
 Apr 20, 2020, 05:28 [#Procon](https://franknyro.github.io/blog/tags/procon)
 
 残念ながらコンテストは Unrated になってしまった…。ハマって時間内に解けなかったので反省。
