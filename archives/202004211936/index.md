@@ -189,7 +189,7 @@ done
 
 実行！
 
-[result](https://franknyro.github.io/blog/images/shellscript.png)
+![result](https://franknyro.github.io/blog/images/shellscript.png)
 
 いいですね。
 
