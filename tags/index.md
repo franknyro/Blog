@@ -5,3 +5,5 @@
 - [#Tech](https://franknyro.github.io/blog/tags/tech)
 - [#Study](https://franknyro.github.io/blog/tags/study)
 - [#Procon](https://franknyro.github.io/blog/tags/procon)
+
+- [#Reading](https://franknyro.github.io/blog/tags/reading)
