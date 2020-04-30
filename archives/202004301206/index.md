@@ -1,3 +1,8 @@
+| [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
+
+# Diary 4/20-29 進捗・散歩・興味
+Apr 30, 2020, 12:06 [#Diary](https://franknyro.github.io/blog/tags/diary)
+
 ## 4/20
 さいきんバグをとったりわからないところでずっと詰まってたりして、みえる進捗があまりない。
 
@@ -133,3 +138,5 @@ Async つかえるようになればスプレッドシート書き込みモジ�
 IoT とか MaaS があたりまえになるとトラフィックがたいへんなことになるので、どうにかしてトラフィックを減らしたり、パンクしないようにやりくりする、というのが差し迫った問題だとおもっている。それを解決するためにエッジコンピューティング（フォグコンピューティング）というかんがえかたが 10 年ぐらいまえからあるらしい。クラウドを多層化して、末端のクラウドでデータをほしいカタチに処理してから中央のクラウドに送信することで、トラフィックをへらすことができる。個人的にはコンピュータの性能が格段にあがらないかぎりは処理をどんどん分散させる方向にすすむとおもっているので、おそらく主流になってくるとおもっている。
 
 ということで掘りさげてみた。
+
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Diary 4/20-29 進捗・散歩・興味 |" data-url="https://franknyro.github.io/blog/archives/202004301206/">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

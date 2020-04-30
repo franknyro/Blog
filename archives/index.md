@@ -1,6 +1,9 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
 # Archives
+## [Diary 4/20-29 進捗・散歩・興味](https://franknyro.github.io/blog/archives/202004301206)
+Apr 30, 2020, 12:06 [#Diary](https://franknyro.github.io/blog/tags/diary)
+
 ## [Reading 情報文化問題集](https://franknyro.github.io/blog/archives/202004261053)
 Apr 26, 2020, 10:53 [#Reading](https://franknyro.github.io/blog/tags/reading)
 
