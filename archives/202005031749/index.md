@@ -227,8 +227,6 @@ $ ./combination_without_repetition
 
 計算量は O(N*P(M, N)) です。
 
-C++ ならば圧倒的に計算量のすくない `next_permutation` をつかうべき。
-
 ### コード
 ```c++
 // DFS で順列を全列挙する
