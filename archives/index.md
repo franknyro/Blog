@@ -1,6 +1,9 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
 # Archives
+## [『思考の整理学』を読んだ](https://franknyro.github.io/blog/archives/202005080006)
+May 08, 2020, 00:06 [#Reading](https://franknyro.github.io/blog/tags/reading)
+
 ## [DFS（深さ優先探索）の全列挙いろいろ](https://franknyro.github.io/blog/archives/202005031749)
 May 03, 2020, 17:49 [#Procon](https://franknyro.github.io/blog/tags/procon)
 
