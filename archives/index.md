@@ -1,6 +1,9 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
 # Archives
+## [精進メモ：AtCoder Beginner Contest 178 C - Ubiquity](https://franknyro.github.io/blog/archives/202011051646)
+Nov 05, 2020, 16:46 [#Procon](https://franknyro.github.io/blog/tags/procon)
+
 ## [精進メモ：AtCoder Beginner Contest 180 D - Takahashi Unevolved](https://franknyro.github.io/blog/archives/202011051555)
 Nov 05, 2020, 15:55 [#Procon](https://franknyro.github.io/blog/tags/procon)
 
