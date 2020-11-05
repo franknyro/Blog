@@ -5,7 +5,9 @@ Nov 05, 2020, 16:46 [#Procon](https://franknyro.github.io/blog/tags/procon)
 
 問題：[AtCoder Beginner Contest 178 C - Ubiquity](https://atcoder.jp/contests/abc178/tasks/abc178_c)
 
-包除原理 `A|B == A&!B & !A&B & A&B == A^B & A&B` と mod 1000000007 の問題。
+Difficulty: 587
+
+包除原理 A OR B = (A XOR B) AND (A AND B) と mod 1000000007 の問題。
 
 ## AC
 ```c

@@ -5,6 +5,8 @@ Nov 05, 2020, 15:55 [#Procon](https://franknyro.github.io/blog/tags/procon)
 
 問題：[AtCoder Beginner Contest 180 D - Takahashi Unevolved](https://atcoder.jp/contests/abc180/tasks/abc180_d)
 
+Difficulty: 721
+
 解説 AC。方針は正しかったがオーバーフローのチェックをしていなかった。
 
 ## WA
