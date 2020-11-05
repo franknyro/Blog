@@ -1,6 +1,9 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
 # Archives
+## [精進メモ：AtCoder Beginner Contest 180 D - Takahashi Unevolved](https://franknyro.github.io/blog/archives/202011051555)
+Nov 05, 2020, 15:55 [#Procon](https://franknyro.github.io/blog/tags/procon)
+
 ## [『思考の整理学』を読んだ](https://franknyro.github.io/blog/archives/202005080006)
 May 08, 2020, 00:06 [#Reading](https://franknyro.github.io/blog/tags/reading)
 

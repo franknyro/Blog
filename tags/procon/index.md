@@ -1,6 +1,10 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
 # #Procon
+## [精進メモ：AtCoder Beginner Contest 180 D - Takahashi Unevolved](https://franknyro.github.io/blog/archives/202011051555)
+Nov 05, 2020, 15:55 [#Procon](https://franknyro.github.io/blog/tags/procon)
+
+
 ## [DFS（深さ優先探索）の全列挙いろいろ](https://franknyro.github.io/blog/archives/202005031749)
 May 03, 2020, 17:49 [#Procon](https://franknyro.github.io/blog/tags/procon)
 
