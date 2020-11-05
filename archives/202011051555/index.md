@@ -8,7 +8,7 @@ Nov 05, 2020, 15:55 [#Procon](https://franknyro.github.io/blog/tags/procon)
 解説 AC。方針は正しかったがオーバーフローのチェックをしていなかった。
 
 ## WA
-```C
+```c
 // C
 #include <stdio.h>
 
@@ -33,7 +33,7 @@ int main(void) {
 a * x を double にキャストしてから 2e18 と比べてオーバーフローしていないかチェックすることで解決。
 
 ## AC
-```C
+```c
 // C
 #include <stdio.h>
 
