@@ -7,7 +7,7 @@ Nov 05, 2020, 16:46 [#Procon](https://franknyro.github.io/blog/tags/procon)
 
 Difficulty: 587
 
-包除原理 |A ∨ B| = |A| + |B| - |A ∧ B| と mod 1000000007 の問題。
+包除原理 \|A ∨ B\| = \|A\| + \|B\| - \|A ∧ B\| と mod 1000000007 の問題。
 
 ## AC
 ```c
