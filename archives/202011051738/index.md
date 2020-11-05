@@ -13,6 +13,7 @@ Union-Find を知らなかったので自力でそれっぽいものを書いて
 
 ## WA
 ```c
+// C
 #include <stdio.h>
 
 int root(int x, int par[]) {
