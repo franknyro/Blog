@@ -1,6 +1,9 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
 # Archives
+## [精進メモ：AtCoder Beginner Contest 173 D - Chat in a Circle](https://franknyro.github.io/blog/archives/202011071516)
+Nov 07, 2020, 15:16 [#Procon](https://franknyro.github.io/blog/tags/procon)
+
 ## [精進メモ：AtCoder Beginner Contest 173 C - H and V](https://franknyro.github.io/blog/archives/202011051754)
 Nov 05, 2020, 17:54 [#Procon](https://franknyro.github.io/blog/tags/procon)
 
