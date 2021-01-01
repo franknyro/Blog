@@ -1,27 +1,34 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) | 
 
 # About me
-## Name
-**F** といいます。
+## なまえ
+F, FrankNyro, ﾌﾗﾝｸﾆｰﾛ
 
-ほんとうは **FrankNyro** なのですが、ながくてわかりにくいので。よみは**ふらんくにーろ**です。
+## なにしてる？
+情報工学科の学生
 
-## Favs
+## すきなもの
 - ゲーム
   - Splatoon2
-    - はじめてやった PvP シューティングです。みごとにハマりました。
-    - クアッドホッパーがすきです。XP は 2500 ちょい。
+    - はじめてやった PvP
+    - はじめてやった TPS
+    - クアッドホッパー
+    - XP2500
   - Apex Legends
-    - はじめてやった FPS です。
-    - Spl2 よりも競技性のあるタイトルをやりたくてはじめました。
-    - PS4 でプレイしてます。Plat4 よりうえにいきたい。
-  - FPS/TPS 以外できないからだになってしまった。
-
-- 競技プログラミング
-  - AtCoder をやっています。中級者になるべく精進中。
-  - C/C++
+    - はじめてやった FPS
+    - 超たのしい
+    - ダイヤ
+  - 麻雀
+    - 高校生の頃からちょっとずつやってる
+    - いまは雀魂
+    - 雀士 3（四麻しかやらない）
+  - AtCoder
+    - 競技プログラミング
+    - 不定期にやる気が出てガーッとやって飽きる
+    - 茶コーダー
 
 - 音楽
+  - YMO を聴いて育ちました
 
 ## Accounts
 - [Twitter](https://twitter.com/FrankNyro)

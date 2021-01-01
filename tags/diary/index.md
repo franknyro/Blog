@@ -1,6 +1,10 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
 # #Diary
+## [2021 年の抱負](https://franknyro.github.io/blog/archives/202101011209)
+Jan 01, 2021, 12:09 [#Diary](https://franknyro.github.io/blog/tags/diary)
+
+
 ## [Diary 4/20-29 進捗・散歩・興味](https://franknyro.github.io/blog/archives/202004301206)
 Apr 30, 2020, 12:06 [#Diary](https://franknyro.github.io/blog/tags/diary)
 
