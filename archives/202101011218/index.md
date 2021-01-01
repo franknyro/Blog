@@ -18,8 +18,6 @@ Jan 01, 2021, 12:18 [#Diary](https://franknyro.github.io/blog/tags/diary)
 
 今年もよろしくおねがいします
 
----
-
 ## 新年の抱負：食う・寝る・承認する
 去年の反省を踏まえて抱負を書いてみました。
 

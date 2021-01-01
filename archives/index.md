@@ -4,9 +4,6 @@
 ## [2021 年の抱負](https://franknyro.github.io/blog/archives/202101011218)
 Jan 01, 2021, 12:18 [#Diary](https://franknyro.github.io/blog/tags/diary)
 
-## [2021 年の抱負](https://franknyro.github.io/blog/archives/202101011209)
-Jan 01, 2021, 12:09 [#Diary](https://franknyro.github.io/blog/tags/diary)
-
 ## [精進メモ：AtCoder Beginner Contest 173 D - Chat in a Circle](https://franknyro.github.io/blog/archives/202011071516)
 Nov 07, 2020, 15:16 [#Procon](https://franknyro.github.io/blog/tags/procon)
 
