@@ -1,6 +1,9 @@
 | [About me](https://franknyro.github.io/blog/) | [Archives](https://franknyro.github.io/blog/archives) | [Tags](https://franknyro.github.io/blog/tags) |
 
 # Archives
+## [2021 年の抱負](https://franknyro.github.io/blog/archives/202101011218)
+Jan 01, 2021, 12:18 [#Diary](https://franknyro.github.io/blog/tags/diary)
+
 ## [2021 年の抱負](https://franknyro.github.io/blog/archives/202101011209)
 Jan 01, 2021, 12:09 [#Diary](https://franknyro.github.io/blog/tags/diary)
 
